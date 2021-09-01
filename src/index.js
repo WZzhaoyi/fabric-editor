@@ -1,15 +1,12 @@
-import Component from './lib/component.vue'
 import Fabric from './lib/fabric-core'
 import FabricEditor from './lib/fabric-editor'
 
 const components = [
-  Component,
   Fabric,
   FabricEditor
 ]
 
 export {
-  Component,
   Fabric,
   FabricEditor
 }

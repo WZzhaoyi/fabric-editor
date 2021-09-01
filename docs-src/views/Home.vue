@@ -3,7 +3,6 @@
     <h2>Description</h2>
     <section class="demo">
       <div class="section-content">
-        <v-component :msg="msg" />
         <fabric-editor ref="editor" :width="1000" :height="500" />
       </div>
     </section>
@@ -33,7 +32,6 @@ data () {
 `
 
 const componentSnippet = `
-<v-component :msg="msg" />
 <fabric-editor :width="1000" :height="500" />
 `
 export default {

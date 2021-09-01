@@ -200,7 +200,7 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: auto;
+  overflow: hidden;
 
   .header {
     height: 60px;

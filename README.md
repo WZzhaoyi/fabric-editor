@@ -1,18 +1,6 @@
-# vue-component-template
+# vue-fabric-editor
 
-## 设置
-
-### package.json
-
-修改name为你的组件名字
-
-```json
-{
-  "name": "组件名字"
-}
-```
-
-### 组件运行
+### 组件开发
 
 ```js
 npm install

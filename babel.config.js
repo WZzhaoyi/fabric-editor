@@ -5,5 +5,6 @@ module.exports = {
         'modules': false
       }
     ]
-  ]
+  ],
+  plugins: ['@babel/plugin-transform-runtime']
 }

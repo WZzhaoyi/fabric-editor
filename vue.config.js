@@ -6,6 +6,19 @@ module.exports = {
   outputDir: './docs',
   publicPath: './',
 
+  devServer: {
+    proxy: {
+      '/process': {
+        target: 'http://localhost:44533',
+        changeOrigin: true,
+        ws: true,
+        pathRewrite: {
+          '^/process': '/process'
+        }
+      }
+    }
+  },
+
   configureWebpack: {
     entry: {
       app: path.resolve(__dirname, './docs-src/main.js')

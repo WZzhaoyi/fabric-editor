@@ -3,7 +3,8 @@
     <h2>Description</h2>
     <section class="demo">
       <div class="section-content">
-        <v-component msg="vue component" />
+        <v-component :msg="msg" />
+        <fabric-editor ref="editor" :width="1000" :height="500" />
       </div>
     </section>
 
@@ -26,13 +27,14 @@ import Collapse from '../components/Collapse.vue'
 const mainSnippet = `
 data () {
   return {
-    msg: 'vue component'
+    msg: 'vue fabric editor'
   }
 }
 `
 
 const componentSnippet = `
 <v-component :msg="msg" />
+<fabric-editor :width="1000" :height="500" />
 `
 export default {
   name: 'Home',
@@ -43,6 +45,7 @@ export default {
 
   data() {
     return {
+      msg: 'vue fabric editor',
       mainSnippet,
       componentSnippet
     }
